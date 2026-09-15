@@ -215,7 +215,7 @@ def build_csv(excel_bytes, num_doc):
     return sio.getvalue().encode("utf-8"), output_rows, statement_no
 
 
-st.title("Poizon → CLIARTFATT CSV")
+st.title("Poizon Statement → CLIARTFATT.csv")
 st.caption("Carica l'Excel dello statement Poizon e genera il CSV pronto per l'importazione.")
 
 uploaded_file = st.file_uploader(
@@ -225,7 +225,7 @@ uploaded_file = st.file_uploader(
 )
 
 num_doc = st.text_input(
-    "NUM_DOC",
+    "PROGRESSIVO",
     placeholder="Es. 123",
     help="Numero documento da riportare su tutte le righe del CSV.",
 )
