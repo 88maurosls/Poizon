@@ -5,7 +5,7 @@ from datetime import date
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 import csv
 
-st.set_page_config(page_title="Poizon Statement → CLIARTFATT CSV", page_icon="📄", layout="centered")
+st.set_page_config(page_title="Poizon → CLIARTFATT CSV", page_icon="📄", layout="centered")
 
 # Intestazioni IDENTICHE al CSV di importazione, compresi gli spazi iniziali.
 HEADERS = [
